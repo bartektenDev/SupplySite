@@ -1,0 +1,26 @@
+{
+  "name": "supplysite",
+  "version": "1.0.2",
+  "description": "A website based web store.",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartektenDev/SupplySite.git"
+  },
+  "keywords": [
+    "supplysite"
+  ],
+  "author": "Bart Tarasewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartektenDev/SupplySite/issues"
+  },
+  "homepage": "https://github.com/bartektenDev/SupplySite#readme"
+}
