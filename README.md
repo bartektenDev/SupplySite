@@ -1,6 +1,8 @@
 # SupplySite
 A basic website of a web store. Use at your own discretion.
 
+# Version 1.0.3
+
 # Demo of How to Install + Screenshots
 Step 1. Install SupplySite       |  Step 2. Launch the Webpage!
 :-------------------------:|:-------------------------:

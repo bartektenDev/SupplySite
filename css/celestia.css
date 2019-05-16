@@ -1,0 +1,20 @@
+
+#dropMainText {
+  font-size: 100;
+  margin-top: -100px;
+}
+
+#dropMainSubText {
+  margin-top: -10px;
+}
+
+#itemname {
+  font-size: 20px;
+
+}
+
+#itemdesc {
+  color: #000;
+  text-decoration: none;
+  cursor: auto;
+}

@@ -5348,6 +5348,7 @@ a.tag:hover {
 .title .tag,
 .subtitle .tag {
   vertical-align: middle;
+  margin-top: 100px;
 }
 
 .title {

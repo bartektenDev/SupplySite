@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>The GSC.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/celestia.css" />
   </head>
   <body>
-    <div class="navi">
       <section class="hero is-primary is-medium">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
@@ -16,7 +22,7 @@
             <div class="container">
               <div class="navbar-brand">
                 <a class="navbar-item">
-                  <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                  <img src="./assets/tgsc-type-white.png" alt="Logo">
                 </a>
                 <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                   <span></span>
@@ -30,17 +36,14 @@
                     Home
                   </a>
                   <a class="navbar-item">
-                    Examples
-                  </a>
-                  <a class="navbar-item">
-                    Documentation
+                    Menu
                   </a>
                   <span class="navbar-item">
-                    <a class="button is-primary is-inverted">
+                    <a class="button is-primary is-inverted" href="scantoorder.html">
                       <span class="icon">
                         <i class="fab fa-github"></i>
                       </span>
-                      <span>Download</span>
+                      <span>Order Now</span>
                     </a>
                   </span>
                 </div>
@@ -49,115 +52,162 @@
           </nav>
         </div>
 
+        <section class="section">
+          <div class="container">
+            <h1 class="title">
+              The Green Supply Co.
+            </h1>
+            <p class="subtitle">
+              Serving only the <strong>BEST</strong>!
+            </p>
+
+          </div>
+        </section>
+
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="title">
-              Title
+            <h1 class="title" id="dropMainText">
+              Welcome stranger!
             </h1>
-            <h2 class="subtitle">
-              Subtitle
+            <h2 class="subtitle" id="dropMainSubText">
+              Take a look around, we just opened.
             </h2>
           </div>
         </div>
+      </section>
 
-        <!-- Hero footer: will stick at the bottom -->
-        <div class="hero-foot">
-          <nav class="tabs">
-            <div class="container">
-              <ul>
-                <li class="is-active"><a>Overview</a></li>
-                <li><a>Modifiers</a></li>
-                <li><a>Grid</a></li>
-                <li><a>Elements</a></li>
-                <li><a>Components</a></li>
-                <li><a>Layout</a></li>
-              </ul>
+        <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Top Picks
+            </h1>
+            <h2 class="subtitle">
+              Based on Flavor and High
+            </h2>
+            <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <h1 id="itemname">Weed - Durban Poison (SATIVA)</h1>
+                      <img src="assets/wddp.jpg" width="400dp" /><br></br>
+                      <a id="itemdesc">According to cultivation legend, Rosenthal was in South Africa in search of new genetics and ran across a fast flowering
+                        strain in the port city of Durban. After arriving home in the U.S., Rosenthal conducted his own selective breeding process on his recently
+                        imported seeds, then begin sharing. Rosenthal gave Mel Frank some of his new South African seeds, and the rest was cannabis history.</a>
+                    </div>
+                </div>
+                <div>
+                  <div class="uk-card uk-card-default uk-card-body">
+                    <h1 id="itemname">Smart Cart - King Louis (INDICA)</h1>
+                    <img src="assets/sckl.jpg" /><br></br>
+                    <a id="itemdesc">This strain announces itself as many people did in the 1600s: by its smell. The difference is this monarch’s odor is one
+                      that’s meant to be enjoyed; its dense nugs have an overwhelmingly piney smell with an earthy musk that will have you thinking of your
+                      last forest adventure. Bred in part from OG Kush, Louis XIII has a very similar spicy kush aroma.</a>
+                  </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <h1 id="itemname">Smart Cart - Mimosa (HYBRID)</h1>
+                      <img src="assets/scmm.jpg" /><br></br>
+                      <a id="itemdesc">A sativa dominant hybrid strain that truly packs a punch, Mimosa is a brand new, up and coming creation from Symbiotic
+                        Genetics which has begun spreading like wildfire among the marijuana community for its vibrant, frosty appearance, fruity yet zesty
+                        aroma, and incredibly energizing/uplifting effects.</a>
+                    </div>
+                </div>
             </div>
-          </nav>
+          </div>
+        </div>
+        </section>
+
+        <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Carti's
+            </h1>
+            <h2 class="subtitle">
+              Stealth, at it's finest
+            </h2>
+            <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <h1 id="itemname">Smart Cart - Blue Cookies (HYBRID)</h1>
+                      <img src="assets/scbc.jpg" /><br></br>
+                      <a id="itemdesc">Blue Cookies is an indica-dominant hybrid cross between two celebrity strains, Girl Scout Cookies and Blueberry. As the
+                        child of these heavyweight champion strains, Blue Cookies delivers a crushing blow of euphoria straight to the head, where it swiftly
+                        sinks down to relax the entire body.</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <h1 id="itemname">Smart Cart - Mimosa (HYBRID)</h1>
+                      <img src="assets/scmm.jpg" /><br></br>
+                      <a id="itemdesc">A sativa dominant hybrid strain that truly packs a punch, Mimosa is a brand new, up and coming creation from Symbiotic
+                        Genetics which has begun spreading like wildfire among the marijuana community for its vibrant, frosty appearance, fruity yet zesty
+                        aroma, and incredibly energizing/uplifting effects.</a>
+                    </div>
+                </div>
+                <div>
+                  <div class="uk-card uk-card-default uk-card-body">
+                    <h1 id="itemname">Smart Cart - King Louis (INDICA)</h1>
+                    <img src="assets/sckl.jpg" /><br></br>
+                    <a id="itemdesc">This strain announces itself as many people did in the 1600s: by its smell. The difference is this monarch’s odor is one
+                      that’s meant to be enjoyed; its dense nugs have an overwhelmingly piney smell with an earthy musk that will have you thinking of your
+                      last forest adventure. Bred in part from OG Kush, Louis XIII has a very similar spicy kush aroma.</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Straight Bud
+            </h1>
+            <h2 class="subtitle">
+              You can't beat old school
+            </h2>
+            <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <h1 id="itemname">Weed - Gelato (HYBRID)</h1>
+                      <img src="assets/wdgelato.jpg" width="400dp" /><br></br>
+                      <a id="itemdesc">Gelato is a cross between Sunset Sherbet and Thin Mint Girl Scout Cookies. Also known as Larry Bird, Gelato (#33) was first
+                        cultivated in Northern California's Bay Area and is derived from a deep bank of genetics created by the Cookie Family. Gelato’s name pays
+                        homage to its sweet aroma.</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                      <h1 id="itemname">Weed - Durban Poison (SATIVA)</h1>
+                      <img src="assets/wddp.jpg" width="400dp" /><br></br>
+                      <a id="itemdesc">According to cultivation legend, Rosenthal was in South Africa in search of new genetics and ran across a fast flowering
+                        strain in the port city of Durban. After arriving home in the U.S., Rosenthal conducted his own selective breeding process on his recently
+                        imported seeds, then begin sharing. Rosenthal gave Mel Frank some of his new South African seeds, and the rest was cannabis history.</a>
+                    </div>
+                </div>
+                <div>
+                  <div class="uk-card uk-card-default uk-card-body">
+                    <h1 id="itemname">Weed - Gorilla Glue #4 (HYBRID)</h1>
+                    <img src="assets/wdgg.jpg" width="400dp" /><br></br>
+                    <a id="itemdesc">Formerly known as Gorilla Glue or Original Glue, GG4’s story began with breeder Joesy Whales. After founding Nevada’s GG Strains,
+                      Whales accidentally created GC4 after a crop of Chem Sister (a popular phenotype of Chemdawg) plants produced hermaphrodites that pollinated
+                      some of his Sour Dubb females</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-card uk-card-default uk-card-body">
+                    <h1 id="itemname">Weed - Dosidos (HYBRID)</h1>
+                    <img src="assets/wddosdos.jpg" width="400dp" /><br></br>
+                    <a id="itemdesc">Do-Si-Dos is a hybrid of OG Kush Breath — a phenotype of Girl Scout Cookies — and Faceoff OG from Oregon’s Archive Seed Bank.</a>
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
-    </div>
-  </section>
-
-  <nav class="level">
-  <!-- Left side -->
-  <div class="level-left">
-    <div class="level-item">
-      <p class="subtitle is-5">
-        <strong>123</strong> posts
-      </p>
-    </div>
-    <div class="level-item">
-      <div class="field has-addons">
-        <p class="control">
-          <input class="input" type="text" placeholder="Find a post">
-        </p>
-        <p class="control">
-          <button class="button">
-            Search
-          </button>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Right side -->
-  <div class="level-right">
-    <p class="level-item"><strong>All</strong></p>
-    <p class="level-item"><a>Published</a></p>
-    <p class="level-item"><a>Drafts</a></p>
-    <p class="level-item"><a>Deleted</a></p>
-    <p class="level-item"><a class="button is-success">New</a></p>
-  </div>
-</nav>
-
-    <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Top Picks
-        </h1>
-        <h2 class="subtitle">
-          Yes, these are gasss
-        </h2>
-      </div>
-    </div>
-    </section>
-
-    <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Carti's
-        </h1>
-        <h2 class="subtitle">
-          I wouldn't sell it, if I didn't smoke it
-        </h2>
-      </div>
-    </div>
-    </section>
-
-    <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Straight Bud
-        </h1>
-        <h2 class="subtitle">
-          You can almost smell it through the screen!
-        </h2>
-      </div>
-    </div>
-    </section>
   </body>
 </html>
