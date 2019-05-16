@@ -13,15 +13,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
     <!-- Custom -->
     <link rel="stylesheet" href="css/celestia.css" />
+    <script src="js/life.js"></script>
   </head>
-  <body>
+  <body onload="loadDataFromURL();">
       <section class="hero is-primary is-medium">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
           <nav class="navbar">
             <div class="container">
               <div class="navbar-brand">
-                <a class="navbar-item">
+                <a class="navbar-item" href="index.html">
                   <img src="./assets/tgsc-type-white.png" alt="Logo">
                 </a>
                 <span class="navbar-burger burger" data-target="navbarMenuHeroA">
@@ -73,5 +74,20 @@
           </div>
         </div>
       </section>
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+              <div class="uk-card-badge uk-label" id="itemNEW">NEW!</div>
+              <h3 class="uk-card-title" id="itemName">ITEM NAME?</h3>
+              <img src="./assets/blackplant.png" id="itemImg" width="400px" />
+              <p>Description: <p id="itemDesc">ITEM DESC?</p></p>
+              <button class="uk-button uk-button-default" id="btngram">1 Gram <a id="item1g">$</a></button>
+              <button class="uk-button uk-button-default" id="btneigth">3.5 Grams (Eigth) <a id="item312g">$</a></button>
+              <button class="uk-button uk-button-default" id="btnquarter">Quarter Ounce <a id="item7g">$</a></button>
+          </div>
+        </div>
+      </div>
+
   </body>
 </html>
