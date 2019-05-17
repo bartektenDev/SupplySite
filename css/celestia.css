@@ -1,4 +1,33 @@
 
+#plaintext {
+  color: #000;
+  text-decoration: none;
+  cursor: auto;
+}
+
+#nodecor  {
+  text-decoration: none;
+  cursor: auto;
+}
+
+#item1g {
+  color: #000;
+  text-decoration: none;
+  cursor: auto;
+}
+
+#item312g {
+  color: #000;
+  text-decoration: none;
+  cursor: auto;
+}
+
+#item7g {
+  color: #000;
+  text-decoration: none;
+  cursor: auto;
+}
+
 #dropMainText {
   font-size: 100;
   margin-top: -100px;

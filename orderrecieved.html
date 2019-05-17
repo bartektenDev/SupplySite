@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>The GSC.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/celestia.css" />
+    <script src="js/life.js"></script>
+  </head>
+  <body onload="loadComponents();">
+      <section class="hero is-primary is-medium">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                  <img src="./assets/tgsc-type-white.png" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item is-active" href="index.html">
+                    Home
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <section class="section">
+          <div class="container">
+            <h1 class="title">
+              The Green Supply Co.
+            </h1>
+            <p class="subtitle">
+              Serving only the <strong>BEST</strong>!
+            </p>
+
+          </div>
+        </section>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title" id="dropMainText">
+              Order Recieved!
+            </h1>
+            <h2 class="subtitle" id="dropMainSubText">
+              <div>Redirecting you in <span id="timeSec">00:05</span> seconds...</div>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+  </body>
+</html>

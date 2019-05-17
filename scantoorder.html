@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>The GSC.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -16,7 +16,7 @@
     <script src="js/life.js"></script>
   </head>
   <body onload="loadDataFromURL();">
-      <section class="hero is-primary is-medium">
+      <section class="hero is-warning is-medium is-bold">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
           <nav class="navbar">
@@ -36,14 +36,7 @@
                   <a class="navbar-item is-active" href="index.html">
                     Home
                   </a>
-                  <span class="navbar-item">
-                    <a class="button is-primary is-inverted" href="scantoorder.html">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Order Now</span>
-                    </a>
-                  </span>
+
                 </div>
               </div>
             </div>
@@ -69,23 +62,51 @@
               Ready to order?
             </h1>
             <h2 class="subtitle" id="dropMainSubText">
-              Scan the code below to continue...
+              Scroll down to fill in info...
             </h2>
           </div>
         </div>
       </section>
 
+
+      <div class="uk-card uk-card uk-card-body">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <div class="uk-column-1-2">
+                <div class="uk-card-badge uk-label" id="itemNEW">NEW!</div>
+                <h1 class="uk-card-title" id="itemName">ITEM NAME?</h1>
+                <img src="" id="itemImg" width="400px" />
+                <br></br><br></br><p>Description: <p id="itemDesc">ITEM DESC?</p>
+
+                <form action="submitorder.php" method="POST">
+                  </p></p>
+                  <div class="field">
+                    <div class="control" id="controla">
+                      <a id="nodecor">Item Selected: </a><input class="input" name="itemnametextform" type="text" readonly="true" value="" id="itemselected"><p></p>
+                      <a id="nodecor">Amount selected: </a><input class="input" name="amountChange" type="text" readonly="true" value="1g" id="amountChangeID" ><a id="plaintext">(grams)</a><p></p>
+                      <button class="button" id="btngram" onclick="changeAmountToBtn1();">1 Gram (Nug) <a id="item1g">$ ???</a></button>
+                      <button class="button" id="btneigth" onclick="changeAmountToBtn2();">3.5 Grams (Eigth) <a id="item312g">$ ???</a></button>
+                      <button class="button" id="btnquarter"onclick="changeAmountToBtn3();">7 Grams (Quarter Ounce) <a id="item7g">$ ???</a></button><p></p>
+                      <a id="nodecor">Please input order code here: </a><input class="input is-info" name="ordercode" type="text" value="" id="ocdata"><p></p>
+                      <button class="button is-success is-rounded" type="submit" name="submit" id="submitorderbtn" onclick="submitOrder();">Submit Order</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <br></br>
+
       <div class="hero-body">
         <div class="container has-text-centered">
-          <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-              <div class="uk-card-badge uk-label" id="itemNEW">NEW!</div>
-              <h3 class="uk-card-title" id="itemName">ITEM NAME?</h3>
-              <img src="" id="itemImg" width="400px" />
-              <p>Description: <p id="itemDesc">ITEM DESC?</p></p>
-              <button class="uk-button uk-button-default" id="btngram">1 Gram <a id="item1g">$ ???</a></button>
-              <button class="uk-button uk-button-default" id="btneigth">3.5 Grams (Eigth) <a id="item312g">$ ???</a></button>
-              <button class="uk-button uk-button-default" id="btnquarter">Quarter Ounce <a id="item7g">$ ???</a></button>
-          </div>
+          <h1 class="title" id="dropMainText">
+            Order Code
+          </h1>
+          <h2 class="subtitle" id="dropMainSubText">
+            Ask you know who, for you know what
+          </h2>
         </div>
       </div>
 

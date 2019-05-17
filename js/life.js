@@ -1,6 +1,7 @@
 // All rights reserved to Bart Tarasewicz 5/16/2019
 // I fucking love programming hire me barttaro@gmail.com
 
+document.getElementById("submitorderbtn").addEventListener("click", submitOrder());
 
 function loadDataFromURL() {
 
@@ -84,10 +85,64 @@ function loadDataFromURL() {
       document.getElementById("btnquarter").disabled = true;
     }
 
+    document.getElementById("itemselected").value = document.getElementById("itemName").innerHTML;
+
   }else{
     //the user didn't click on the item just the plain old order button
     //now load the type of data required for the plain old order button
 
   }
 
+}
+
+function changeAmountToBtn1() {
+
+  document.getElementById("amountChangeID").innerHTML = "1";
+  document.getElementById("amountChangeID").value = "1g";
+
+}
+
+function changeAmountToBtn2() {
+
+  document.getElementById("amountChangeID").innerHTML = "3.5";
+  document.getElementById("amountChangeID").value = "3.5g";
+
+}
+
+function changeAmountToBtn3() {
+
+  document.getElementById("amountChangeID").innerHTML = "7";
+  document.getElementById("amountChangeID").value = "7g";
+
+}
+
+function submitOrder()  {
+  document.getElementById("submitorderbtn").className += " is-loading";
+  document.getElementById("controla").className += " is-loading";
+}
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+        if(document.getElementById("timeSec").innerHTML == "00:00"){
+          window.location.replace("http://192.168.0.20/");
+        }
+    }, 1000);
+}
+
+function loadComponents() {
+  var fiveMinutes = 5,
+      display = document.querySelector('#timeSec');
+  startTimer(fiveMinutes, display);
 }
