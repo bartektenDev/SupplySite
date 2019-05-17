@@ -56,7 +56,7 @@ function loadDataFromURL() {
       document.getElementById("btngram").disabled = false;
     }else if(item1g == "N/A"){
       //1 G i guess is not available
-      document.getElementById("item1g").innerHTML = "$" + item1g;
+      document.getElementById("item1g").innerHTML = item1g;
       document.getElementById("btngram").disabled = true;
     }
 
@@ -64,7 +64,7 @@ function loadDataFromURL() {
       document.getElementById("item1g").innerHTML = "$" + item312g;
       document.getElementById("btneigth").disabled = false;
     }else if(item312g == "40"){
-      document.getElementById("item312g").innerHTML = item312g;
+      document.getElementById("item312g").innerHTML = "$" + item312g;
       document.getElementById("btneigth").disabled = false;
     }else if(item312g == "N/A"){
       //1 G i guess is not available
