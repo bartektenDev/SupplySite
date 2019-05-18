@@ -1,4 +1,3 @@
-Order Code:  - Item: Weed - Gelato (HYBRID) - Amount: 3.5g
-Order Code:  - Item: Weed - Gelato (HYBRID) - Amount: 1g
-Order Code:  - Item: Weed - Gelato (HYBRID) - Amount: 3.5g
-Order Code:  - Item: Weed - Durban Poison (SATIVA) - Amount: 3.5g
+Order Code: Kitkat - Item: Smart Cart - Blue Cookies (HYBRID) - Amount: 1g
+Order Code: Bartsimpson - Item: Weed - Durban Poison (SATIVA) - Amount: 3.5g
+Order Code: jimmyjam - Item: Weed - Dosidos (HYBRID) - Amount: 3.5g

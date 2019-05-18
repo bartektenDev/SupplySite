@@ -136,7 +136,7 @@ function startTimer(duration, display) {
             timer = duration;
         }
         if(document.getElementById("timeSec").innerHTML == "00:00"){
-          window.location.replace("http://127.0.0.1/");
+          window.location.replace("http://192.168.1.7/");
         }
     }, 1000);
 }

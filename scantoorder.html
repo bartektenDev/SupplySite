@@ -76,7 +76,11 @@
                 <div class="uk-card-badge uk-label" id="itemNEW">NEW!</div>
                 <h1 class="uk-card-title" id="itemName">ITEM NAME?</h1>
                 <img src="" id="itemImg" width="400px" />
-                <br></br><br></br><p>Description: <p id="itemDesc">ITEM DESC?</p>
+                <br></br><br></br><br></br><p>Description: <p id="itemDesc">ITEM DESC?</p>
+
+                <button class="button" id="btngram" onclick="changeAmountToBtn1();">1 Gram (Nug) <a id="item1g">$ ???</a></button>
+                <button class="button" id="btneigth" onclick="changeAmountToBtn2();">3.5 Grams (Eigth) <a id="item312g">$ ???</a></button>
+                <button class="button" id="btnquarter"onclick="changeAmountToBtn3();">7 Grams (Quarter Ounce) <a id="item7g">$ ???</a></button><p></p>
 
                 <form action="submitorder.php" method="POST">
                   </p></p>
@@ -84,9 +88,6 @@
                     <div class="control" id="controla">
                       <a id="nodecor">Item Selected: </a><input class="input" name="itemnametextform" type="text" readonly="true" value="" id="itemselected"><p></p>
                       <a id="nodecor">Amount selected: </a><input class="input" name="amountChange" type="text" readonly="true" value="1g" id="amountChangeID" ><a id="plaintext">(grams)</a><p></p>
-                      <button class="button" id="btngram" onclick="changeAmountToBtn1();">1 Gram (Nug) <a id="item1g">$ ???</a></button>
-                      <button class="button" id="btneigth" onclick="changeAmountToBtn2();">3.5 Grams (Eigth) <a id="item312g">$ ???</a></button>
-                      <button class="button" id="btnquarter"onclick="changeAmountToBtn3();">7 Grams (Quarter Ounce) <a id="item7g">$ ???</a></button><p></p>
                       <a id="nodecor">Please input order code here: </a><input class="input is-info" name="ordercode" type="text" value="" id="ocdata"><p></p>
                       <button class="button is-success is-rounded" type="submit" name="submit" id="submitorderbtn" onclick="submitOrder();">Submit Order</button>
                     </div>
