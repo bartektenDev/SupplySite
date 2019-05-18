@@ -10,6 +10,6 @@
         echo "Sorry but looks like we ran into an error. Your order failed.";
     }
     sleep(4);
-    header("Location: http://192.168.0.20/dashboard/orderrecieved.html");
+    header("Location: http://127.0.0.1/dashboard/orderrecieved.html");
 
 ?>
